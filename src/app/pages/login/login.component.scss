@@ -1,0 +1,128 @@
+header {
+    display: flex;
+    justify-content: flex-end; // Alinha o botão à direita
+    padding: 10px;
+
+    button {
+        background: none; // Remove fundo
+        border: none; // Remove borda
+        color: inherit; // Usa a cor padrão do texto
+        font-size: inherit; // Mantém o tamanho padrão do texto
+        cursor: pointer; // Mantém o comportamento de botão
+        padding: 0; // Remove espaçamentos internos
+
+        &:hover {
+            text-decoration: underline; // Adiciona um efeito visual ao passar o mouse (opcional)
+        }
+    }
+}
+
+
+
+.logo-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Centraliza o container na tela */
+.container {
+    position: relative;
+    bottom: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+}
+
+/* Estilização do formulário */
+.login {
+    position: relative;
+    top: -50px; // Ajuste esse valor para mover mais ou menos para cima
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    width: 250px;
+    h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .password-container {
+        display: flex;
+        justify-content: space-between; // Deixa o label à esquerda e o ícone à direita
+        align-items: center;
+        
+        .toggle-password {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+            color: #C4C4C4;
+            font-size: 14px;
+
+            img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}
+
+
+/* Estilo do input e botão */
+input, 
+button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #C4C4C4;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #8d8b8b;
+    }
+}
+
+/* Divider (ou) */
+.divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+}
+
+/* Estilo para os botões de login social */
+.logins {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    img {
+        width: 250px;
+        height: auto;
+    }
+}
+
+fieldset {
+    border: none; /* Remove a borda */
+    padding: 0; /* Remove espaços extras */
+    margin: 0; /* Remove margens extras */
+}
