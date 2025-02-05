@@ -109,6 +109,5 @@
         }
       }
     }
-  },
-  "defaultProject": "auth-login"
+  }
 }
