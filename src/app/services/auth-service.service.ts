@@ -18,4 +18,8 @@ export class AuthService {
   login(credentials: LoginRequest): Observable<ApiResponse<LoginResponse>> {
     return this.http.post<ApiResponse<LoginResponse>>(`${this.apiUrl}/login`, credentials);
   }
+
+  exchangeCodeForToken(code: string): Observable<any> {
+    return this.http.post(`${this.apiUrl}/google`, { code });
+  }
 }

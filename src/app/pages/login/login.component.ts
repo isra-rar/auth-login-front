@@ -32,4 +32,14 @@ export class LoginComponent implements OnInit {
     this.showPassword = !this.showPassword;
   }
 
+  loginWithGoogle() {
+    window.location.href = 'https://accounts.google.com/o/oauth2/auth?' +
+    'client_id=196774121280-1hiicc2ulo073omhv7fddgsj2snp1404.apps.googleusercontent.com' +
+    '&redirect_uri=http://localhost:4200/auth/callback' +
+    '&response_type=code' +
+    '&scope=openid email profile';
+  }
+
+  
+
 }
