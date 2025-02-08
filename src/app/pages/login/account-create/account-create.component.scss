@@ -1,0 +1,86 @@
+body {
+    background-color: #ebe7e7;
+}
+
+.form-group {
+  margin-bottom: 0.5rem;
+
+  label {
+    margin-bottom: 0.5rem;
+  }
+
+  &.two-fields {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    div {
+        width: 40%;
+
+        span {
+            font-size: 100%;
+        }
+    }
+
+    input {
+        display: flex;
+        justify-content: center; /* Alinha o botão horizontalmente no centro */
+        border-radius: 6px;
+        width: 100%;
+        height: 40px;
+        margin-top: 5px;
+        margin-bottom: 8px;
+        
+    }
+  }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: 60vh;  /* Altura total do card */
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 120px auto;
+}
+
+form {
+    width: 100%;
+}
+
+
+.buttonCard {
+    width: 100%; /* Faz o botão ocupar 100% da largura do seu contêiner */
+    display: flex;
+    justify-content: center; /* Alinha o botão horizontalmente no centro */
+    padding-top: 2rem; /* Se você precisar de um pouco de espaçamento acima do botão */
+}
+
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Se você quiser que ocupe toda a largura do card */
+   
+    h1 {
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        margin-top: 0;
+    }
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center; /* Alinha o checkbox e o label verticalmente */
+    margin-left: 20px;  /* Ajuste conforme necessário */
+}
+

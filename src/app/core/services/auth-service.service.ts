@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { LoginRequest, LoginResponse } from '../models/auth.model';
-import { ApiResponse } from '../models/api-response.model';
+import { LoginRequest, LoginResponse } from '../../models/auth.model';
+import { ApiResponse } from '../../models/api-response.model';
 
 
 @Injectable({
